@@ -40,6 +40,7 @@ passport.use(new GoogleStrategy({
   clientID: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
   callbackURL: 'https://zany-pear-rooster-coat.cyclic.app/auth/google/admin'
+  // make sure this matches the callback url in Google dev console
 },
 
 function(accessToken, refreshToken, email, cb) {
